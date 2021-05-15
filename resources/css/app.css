@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply mx-4 text-lg uppercase font-bold text-blue-700;
+    }
+
+    a {
+        @apply underline font-bold text-blue-700 hover:text-blue-500;
+    }
+
+    input {
+        @apply appearance-none border rounded px-3 focus:outline-none;
+    }
+
+    fieldset {
+        @apply m-4 border-2 border-blue-100 rounded;
+    }
+
+    button,
+    .submit-button {
+        @apply m-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    }
+
+    table {
+        @apply rounded-t-lg w-full bg-blue-500 text-white;
+    }
+
+    th,
+    td {
+        @apply px-4 py-3;
+    }
+
+    .header-row {
+        @apply text-left border-b border-blue-600;
+    }
+
+    .entry-row {
+        @apply bg-blue-100 border-b border-gray-300 text-black;
+    }
+}
