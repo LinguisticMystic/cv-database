@@ -45,7 +45,7 @@
             House number: <input type="text" name="house_number" value="{{ old('house_number') }}"><br>
             City: <input type="text" name="city" value="{{ old('city') }}"><br>
             Postal code: <input type="text" name="postal_code" value="{{ old('postal_code') }}"><br>
-            Country: <input type="text" name="country" value="{{ old('country') }}"><br>
+            Country: @include('CV.countryList')
         </div>
     </fieldset>
 
